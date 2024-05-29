@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chathusha</title>
+        <style>
+            body{background-image:url("Z.png"); background-attachment: fixed;background-size:2000px;background-repeat: no-repeat;background-position:center;}
+            form{background-image:url("Y.png"); background-attachment: fixed;background-size:2000px;background-repeat: no-repeat;background-position:center;}
+            a{color: black;}
+            #z{font-family: cursive;font-weight: bold;}
+            #x{background-color: white;font-family: arial;}
+            .face{
+                position: fixed;
+                left: 36%
+                
+            }
+            #bug{
+                margin-left: 95%;
+                animation: Bmove 20s infinite ease-in;
+            }
+            #bg{
+                border-radius: 60%;
+                height: 40%;
+                
+            }
+            #righte{
+                animation: idle 20s infinite;
+            }
+            #lefte{
+                animation: idle 20s infinite;
+            }
+            #rightec{
+                animation: idlec 20s infinite;
+            }
+            #leftec{
+                animation: idlec 20s infinite;
+            }
+            #mouth{
+                z-index: -1;
+                animation: idlem 20s infinite;
+                z-index: -1;
+            }
+            #mouthc{
+                z-index: 0;
+                animation: idlemc 20s infinite;
+                z-index: 0;
+            }
+            #moutho{
+                z-index: -1;
+                animation: idlemo 20s infinite;
+                z-index: -1;
+            }
+            @keyframes Bmove{
+                from{
+                    margin-left: 95%;
+                }
+                to{
+                    margin-left: 20%;
+                }
+            }
+            @keyframes idlem{
+                12%{
+                    z-index: -1;
+                }
+                13%{
+                    z-index: 0;
+                }
+                70%{
+                    z-index: 0;
+                }
+                71%{
+                    z-index: -1;
+                }
+                90%{
+                    z-index: -1;
+                }
+                91%{
+                    z-index: 0;
+                }
+
+            }
+            @keyframes idlemc{
+                12%{
+                    z-index: 0;
+                }
+                13%{
+                    z-index: -1;
+                }
+                91%{
+                    z-index: -1;
+                }
+            }
+            @keyframes idlemo{
+                12%{
+                    z-index: -1;
+                }
+                13%{
+                    z-index: -1;
+                }
+                70%{
+                    z-index: -1;
+                }
+                71%{
+                    z-index: 0;
+                }
+                90%{
+                    z-index: 0;
+                }
+                91%{
+                    z-index: -1;
+                }
+            }
+            @keyframes idle{
+                0%{
+                    z-index: 0;
+                }
+                11%{
+                    z-index: 0;
+                }
+                12%{
+                    z-index: -1;
+                }
+                13%{
+                    z-index: 0;
+                    transform: matrix(1,0,0,1,0,0);
+                }
+                31%{
+                    z-index: 0;
+                    transform: matrix(1,0,0,1,20,0);
+                }
+                32%{
+                    z-index: -1;
+                }
+                33%{
+                    z-index: 0;
+                    transform: matrix(1,0,0,1,20,0);
+                }
+                51%{
+                    z-index: 0;
+                    transform: matrix(1,0,0,1,20,-20);
+                }
+                52%{
+                    z-index: -1;
+                }
+                53%{
+                    z-index: 0;
+                    transform: matrix(1,0,0,1,20,-20);
+                }
+                71%{
+                    z-index: 0;
+                    transform: matrix(1,0,0,1,0,-20);
+                }
+                72%{
+                    z-index: -1;
+                }
+                73%{
+                    z-index: 0;
+                    transform: matrix(1,0,0,1,0,-20);
+                }
+                91%{
+                    z-index: 0;
+                    transform: matrix(1,0,0,1,-20,-20);
+                }
+                92%{
+                    z-index: -1;
+                }
+                93%{
+                    z-index: 0;
+                }
+                
+            }
+            @keyframes idlec{
+                13%{
+                    transform: matrix(1,0,0,1,0,0);
+                }
+                31%{
+                    transform: matrix(1,0,0,1,20,0);
+                }
+                33%{
+                    transform: matrix(1,0,0,1,20,0);
+                }
+                51%{
+                    transform: matrix(1,0,0,1,20,-20);
+                }
+                53%{
+                    transform: matrix(1,0,0,1,20,-20);
+                }
+                71%{
+                    transform: matrix(1,0,0,1,0,-20);
+                }
+                73%{
+                    transform: matrix(1,0,0,1,0,-20);
+                }
+                91%{
+                    transform: matrix(1,0,0,1,-20,-20);
+                }
+
+            }
+
+        </style>
+    </head>
+    <body>
+        <marquee><font size="4px" color="white">Fun animation Club :) .....</font></marquee>
+        <marquee direction="right"><font color="white">.....Directed by Chathusha....</font></marquee>
+        <hr color="red" size="2px">
+        <hr color="black" size="4px">
+        <center>
+        <form><font color="black" id="z">
+            <p>Name:<input type="text" name="t1" placeholder="Username"></p>
+            <p>Password:<input type="password" name="p1" placeholder="Password"></p>
+            <p>Birthday:<input type="date" name="d1"></p>
+            <p>Select your gender :</p>
+            <p><input type="radio" name="r1" value="male">Male
+            <input type="radio" name="r1" value="other">Other
+            <input type="radio" name="r1" value="female">Female</p>
+            <p>Select your options</p>
+            <p><input type="checkbox" name="check" value="java">JAVA
+            <input type="checkbox" name="check" value="html">HTML
+            <input type="checkbox" name="check" value="css">CSS
+            <input type="checkbox" name="check" value="dbms">DBMS</p>
+            <p>Select your city:</p>
+            <select>
+                <option value="galle">Galle</option>
+                <option value="jaffna">Jaffna</option>
+                <option value="colombo">Colombo</option>
+                <option value="panadura">Panadura</option>
+                <option value="mathara">Mathara</option>
+                <option value="gmapaha">Gampaha</option>
+            </select>
+            <br><br>
+            <input type="submit" name="Submit"> <input type="reset" name="Reset">
+        </font>
+        </form>
+        </center>
+        <div id="bug"><font size="25px" color="white">🐞</font></div>
+        <img id="bg" class="face" src="bg.png" alt="" width="500pt">
+        <img id="lefte" class="face" src="LeftE.png" alt="" width="500pt">
+        <img id="leftec" class="face" src="LeftEC.png" alt="" width="500pt">
+        <img id="mouthc" class="face" src="mouthc.png" alt="" width="500pt">
+        <img id="moutho" class="face" src="Moutho.png" alt="" width="500pt">
+        <img id="mouth" class="face" src="Mouth.png" alt="" width="500pt">
+        <img id="righte" class="face" src="RightE.png" alt="" width="500pt">
+        <img id="rightec" class="face" src="RightEC.png" alt="" width="500pt">
+        
+    </body>
+</html>
